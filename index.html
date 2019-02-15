@@ -93,7 +93,14 @@
          }
         
         
-            
+            <form action="/action_page.php">
+  First name: <input type="Username" name="fname"><br>
+  Last name: <input type="Password" name="lname"><br>
+  <input type="submit" value="Submit">
+</form>
+       $("button").on("click", function() {
+           sayPhase($(this).text());
+         });
         // hook up event handler on the buttons
         
          $("button").on("click", function() {
