@@ -38,7 +38,11 @@
     <!--  UI Items to Modify -->
     
     <h1 class="mdc-typography--display1">Hello, World!</h1>
-    
+    <form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+</form>
     
     <button type="button" class="mdc-button mdc-button--raised">
     Stop playing
@@ -91,16 +95,9 @@
            var msg = new SpeechSynthesisUtterance(setOfWords);
            window.speechSynthesis.speak(msg);
          }
-        
-        
-            <form action="/action_page.php">
-  First name: <input type="Username" name="fname"><br>
-  Last name: <input type="Password" name="lname"><br>
-  <input type="submit" value="Submit">
-</form>
-       $("button").on("click", function() {
-           sayPhase($(this).text());
-         });
+
+
+      
         // hook up event handler on the buttons
         
          $("button").on("click", function() {
